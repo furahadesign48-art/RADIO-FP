@@ -1,30 +1,59 @@
 {
   "expo": {
-    "name": "RADIO-FP",
+    "name": "FreqPositive",
     "slug": "RADIO-FP",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/logo.png",
+    "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "jsEngine": "hermes",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "jsEngine": "hermes",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio"
+        ]
+      }
     },
     "android": {
+      "jsEngine": "hermes",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundColor": "#ffffff",
+        "foregroundImage": "./assets/logo.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "WAKE_LOCK",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "INTERNET",
+        "MODIFY_AUDIO_SETTINGS",
+        "RECORD_AUDIO",
+        "SYSTEM_ALERT_WINDOW",
+        "VIBRATE",
+        "POST_NOTIFICATIONS"
+      ],
+      "package": "com.furaha48.RADIOFP"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      "./plugins/withTrackPlayer"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "36ee1b34-25cd-4347-85b6-0f7805d636a4"
+      }
     }
   }
 }
