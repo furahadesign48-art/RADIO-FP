@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "FreqPositive",
+    "name": "Fréquence Positive",
     "slug": "RADIO-FP",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -41,7 +41,7 @@
         "VIBRATE",
         "POST_NOTIFICATIONS"
       ],
-      "package": "com.furaha48.RADIOFP"
+      "package": "com.furahadigital.radiofp"
     },
     "web": {
       "favicon": "./assets/favicon.png"

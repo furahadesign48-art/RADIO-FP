@@ -218,7 +218,7 @@ export const RadioPlayer = ({
   const handleShare = async () => {
     try {
       const result = await Share.share({
-        message: `J'écoute ${trackInfo.title} - ${trackInfo.artist} sur Fréquence Positive ! 🎧\n\nRejoignez-nous en téléchargeant l'application ici : https://play.google.com/store/apps/details?id=com.furaha48.RADIOFP`,
+        message: `J'écoute ${trackInfo.title} - ${trackInfo.artist} sur Fréquence Positive ! 🎧\n\nRejoignez-nous en téléchargeant l'application ici : https://play.google.com/store/apps/details?id=com.furahadigital.radiofp`,
       });
     } catch (error) {
       console.error(error.message);
